@@ -1,0 +1,30 @@
+Source Title: NICE Framework Incident Response Work Role
+Source Type: Official cybersecurity work-role summary
+Source URL: https://niccs.cisa.gov/tools/nice-framework/work-role/incident-response
+Date Collected: 2026-06-02
+
+Content:
+The NICE Framework describes Incident Response work as investigating, analyzing, and responding to network cybersecurity incidents. This work role falls under the Protection and Defense area.
+
+For an entry-level candidate, incident response does not always mean leading a major breach investigation. Junior responsibilities may include reviewing alerts, collecting evidence, documenting timelines, escalating suspicious activity, assisting with containment steps, and writing incident notes.
+
+Skills connected to incident response preparation:
+- Understanding the incident response lifecycle
+- Alert triage
+- Log review
+- Network traffic analysis
+- Endpoint investigation basics
+- Malware and phishing awareness
+- Evidence documentation
+- Escalation procedures
+- Communication during incidents
+- Writing clear incident reports
+
+Good portfolio projects for incident response:
+- Analyze a simulated phishing alert and write an incident report.
+- Review Windows Event Logs for suspicious logon activity.
+- Use Wireshark to investigate suspicious network traffic.
+- Use a SIEM lab to triage alerts and document findings.
+- Build a timeline of attacker activity from provided logs.
+
+A strong resume bullet should connect actions to investigation and documentation, such as: "Analyzed simulated security alerts, reviewed logs, documented findings, and created an incident response report with recommended containment steps."

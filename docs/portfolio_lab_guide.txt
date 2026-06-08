@@ -1,0 +1,37 @@
+Source Title: Cybersecurity Portfolio Lab Guide
+Source Type: Self-created project guide
+Source URL: Local project note
+Date Collected: 2026-06-02
+
+Content:
+A cybersecurity portfolio should prove practical ability. For entry-level candidates, the strongest projects are not just screenshots of completed labs; they explain the objective, tools, steps, findings, analysis, and lessons learned.
+
+Recommended beginner portfolio projects:
+1. Nmap Network Scanning Lab
+   Show host discovery, port scanning, service detection, and interpretation of results.
+
+2. Wireshark Packet Analysis Lab
+   Capture traffic, identify protocols, follow TCP streams, and explain suspicious or important traffic.
+
+3. Vulnerability Assessment Lab
+   Scan a lab target with tools such as OpenVAS, Nessus Essentials, Nmap, or OWASP ZAP. Rank findings and recommend fixes.
+
+4. SOC Alert Triage Report
+   Use sample logs or a SIEM lab to investigate an alert. Document what happened, why it matters, and what should be done next.
+
+5. Incident Response Report
+   Analyze a simulated incident, create a timeline, identify affected systems, and recommend containment/remediation.
+
+6. GNS3 Network Segmentation Lab
+   Build VLANs, routing, DHCP, and access controls. Explain how segmentation supports security.
+
+A strong GitHub lab should include:
+- Project objective
+- Lab topology or architecture diagram
+- Tools used
+- Step-by-step process
+- Screenshots
+- Findings
+- Lessons learned
+- Security recommendations
+- Clear README documentation

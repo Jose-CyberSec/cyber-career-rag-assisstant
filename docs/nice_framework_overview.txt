@@ -1,0 +1,19 @@
+Source Title: NICE Workforce Framework for Cybersecurity
+Source Type: Official cybersecurity workforce framework summary
+Source URL: https://niccs.cisa.gov/tools/nice-framework
+Date Collected: 2026-06-02
+
+Content:
+The NICE Framework provides a common language for describing cybersecurity work. It is used for career exploration, education, training, hiring, and workforce development. Instead of relying only on job titles, the framework organizes cybersecurity work into categories, work roles, competencies, tasks, knowledge, and skills.
+
+For an entry-level cybersecurity candidate, the NICE Framework is helpful because job titles can be inconsistent. One employer may say SOC Analyst, another may say Cyber Defense Analyst, Security Analyst, Incident Response Analyst, or Information Security Analyst. The work-role language helps identify what tasks and skills are actually needed.
+
+Useful career takeaway:
+Do not focus only on titles. Compare the tasks and required skills behind each role. A beginner should look for roles connected to operations, protection and defense, incident response support, vulnerability analysis support, help desk, technical support, and security monitoring.
+
+How this applies to a cyber career plan:
+- Use the framework to map job postings to real tasks.
+- Identify repeated skills across different cybersecurity roles.
+- Connect learning plans to specific role responsibilities.
+- Build GitHub labs that demonstrate tasks employers recognize.
+- Use the framework vocabulary in resumes and interviews.

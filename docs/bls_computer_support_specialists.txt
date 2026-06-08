@@ -1,0 +1,24 @@
+Source Title: U.S. Bureau of Labor Statistics - Computer Support Specialists
+Source Type: Official occupational outlook summary
+Source URL: https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm
+Date Collected: 2026-06-02
+
+Content:
+Computer Support Specialists provide technical help to users and organizations. They may troubleshoot computer problems, support hardware and software, maintain networks, assist users, and document issues through support processes.
+
+For someone trying to enter cybersecurity, IT Support and Help Desk roles can be a strong stepping stone. These roles build practical experience with troubleshooting, customer support, Windows and software issues, basic networking, account access, ticketing systems, and technical documentation.
+
+Skills commonly connected to support roles:
+- Troubleshooting hardware and software
+- User support
+- Windows and operating system basics
+- Networking fundamentals
+- Password and account issues
+- Printer, VPN, and email support
+- Ticketing systems
+- Customer communication
+- Documentation
+- Escalation procedures
+
+Why this helps cybersecurity:
+SOC and security analyst roles often require clear documentation, escalation, troubleshooting, and understanding user/system behavior. Help Desk experience can show that a candidate can solve technical problems, communicate professionally, and work with real users and systems.

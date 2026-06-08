@@ -1,0 +1,25 @@
+Source Title: Cisco 200-301 CCNA Exam Topics
+Source Type: Official certification topic summary
+Source URL: https://learningnetwork.cisco.com/s/ccna-exam-topics
+Date Collected: 2026-06-02
+
+Content:
+The Cisco CCNA 200-301 exam focuses on foundational networking knowledge. Major exam areas include network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation/programmability.
+
+For an entry-level IT or cybersecurity candidate, CCNA topics are useful because many cybersecurity tasks require understanding how networks work. SOC Analysts and IT Support Specialists often investigate issues involving IP addressing, VLANs, routing, DNS, DHCP, VPNs, access control, and network device behavior.
+
+Important CCNA-related topics for career preparation:
+- OSI and TCP/IP models
+- IPv4 and IPv6 addressing
+- Subnetting
+- Switching concepts
+- VLANs and trunking
+- Routing concepts
+- Static and dynamic routing basics
+- Wireless networking basics
+- DHCP, DNS, NAT, NTP, and SNMP
+- ACLs and basic network security
+- Device hardening
+- Automation concepts and APIs
+
+For a cybersecurity portfolio, CCNA knowledge can be demonstrated through GNS3 or Packet Tracer labs. Strong labs include VLAN segmentation, routing between networks, DHCP troubleshooting, ACL filtering, and documenting how network segmentation affects security.

@@ -1,0 +1,24 @@
+Source Title: CompTIA Security+ SY0-701 Exam Objectives
+Source Type: Official certification objectives summary
+Source URL: https://assets.ctfassets.net/82ripq7fjls2/6TYWUym0Nudqa8nGEnegjG/0f9b974d3b1837fe85ab8e6553f4d623/CompTIA-Security-Plus-SY0-701-Exam-Objectives.pdf
+Date Collected: 2026-06-02
+
+Content:
+CompTIA Security+ is an entry-level cybersecurity certification focused on baseline security knowledge and practical security operations. The SY0-701 exam is organized around five major domains: general security concepts, threats/vulnerabilities/mitigations, security architecture, security operations, and security program management/oversight.
+
+For an entry-level cybersecurity candidate, Security+ helps demonstrate understanding of common security terms, controls, threats, vulnerabilities, identity concepts, cryptography basics, security architecture, monitoring, incident response, risk management, governance, and compliance.
+
+The largest exam domain is Security Operations. This connects strongly to SOC Analyst preparation because it includes topics such as security monitoring, log analysis, incident response processes, vulnerability management, automation, and operational security practices.
+
+A candidate preparing for SOC or cybersecurity analyst roles should use Security+ as a foundation, then reinforce it with hands-on labs in networking, Linux, Windows, SIEM tools, packet analysis, vulnerability scanning, and incident reporting.
+
+Common Security+ related skills for resumes:
+- Risk management
+- Threats and vulnerabilities
+- Security controls
+- Identity and access management
+- Incident response
+- Security monitoring
+- Vulnerability management
+- Secure network architecture
+- Governance, risk, and compliance

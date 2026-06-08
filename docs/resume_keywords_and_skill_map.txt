@@ -1,0 +1,54 @@
+Source Title: Entry-Level Cybersecurity Resume Keywords and Skill Map
+Source Type: Self-created career note
+Source URL: Local project note
+Date Collected: 2026-06-02
+
+Content:
+Entry-level cybersecurity and IT resumes should include honest, relevant keywords that match the candidate's real skills, labs, coursework, and experience. Keywords help recruiters and applicant tracking systems understand the candidate's technical foundation.
+
+Common IT Support keywords:
+- Help Desk
+- Technical support
+- Troubleshooting
+- Ticketing systems
+- Active Directory
+- Windows support
+- Hardware and software support
+- VPN
+- DNS
+- DHCP
+- TCP/IP
+- Customer service
+- Documentation
+- Escalation
+
+Common SOC Analyst keywords:
+- Security monitoring
+- Alert triage
+- SIEM
+- Log analysis
+- Incident response
+- Phishing analysis
+- Network traffic analysis
+- Endpoint security
+- Vulnerability scanning
+- Threat detection
+- Escalation procedures
+- Risk assessment
+- Security+
+
+Common portfolio keywords:
+- Nmap
+- Wireshark
+- ChromaDB
+- Python
+- Linux
+- Windows Event Logs
+- GNS3
+- OWASP ZAP
+- Metasploitable
+- Incident report
+- Vulnerability assessment
+
+Resume guidance:
+Do not claim professional experience with tools unless it is true. For labs, say "hands-on lab experience" or "academic project experience." Strong bullets should combine tool, action, and result, such as: "Performed Nmap scanning in a lab environment, analyzed exposed services, and documented security findings with remediation recommendations."

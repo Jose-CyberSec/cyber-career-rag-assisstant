@@ -1,0 +1,23 @@
+Source Title: U.S. Bureau of Labor Statistics - Information Security Analysts
+Source Type: Official occupational outlook summary
+Source URL: https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm
+Date Collected: 2026-06-02
+
+Content:
+Information Security Analysts help protect an organization's computer networks and systems. The role commonly involves planning and carrying out security measures, monitoring systems, investigating security issues, and recommending improvements to reduce risk.
+
+For an entry-level candidate, this occupation shows why both technical and analytical skills matter. Cybersecurity work is not only about tools; analysts must understand threats, evaluate risk, communicate findings, and help organizations improve defenses.
+
+Relevant skills for this career area:
+- Security monitoring
+- Network and system security
+- Firewalls and protective technologies
+- Incident investigation
+- Vulnerability management
+- Risk assessment
+- Documentation and reporting
+- Communication with technical teams and business stakeholders
+- Continuous learning as threats change
+
+How to prepare:
+Build a foundation in networking, operating systems, security fundamentals, and hands-on labs. Certifications such as Security+ can support entry-level credibility, while projects such as SIEM analysis, vulnerability scanning, and incident response reports demonstrate applied skills.

@@ -1,0 +1,23 @@
+Source Title: CyberSeek Cybersecurity Career Pathways
+Source Type: Cybersecurity career pathway summary
+Source URL: https://www.cyberseek.org/pathway.html
+Date Collected: 2026-06-02
+
+Content:
+CyberSeek provides career pathway information for cybersecurity roles and helps connect roles to skills, certifications, and workforce demand. It is useful for understanding how entry-level IT experience can lead toward cybersecurity positions.
+
+A common path into cybersecurity starts with IT support, networking, system administration, or technical operations. Help Desk and IT Support roles build troubleshooting, customer service, Windows support, networking, Active Directory, ticketing, and documentation skills. These skills can transfer into SOC Analyst and cybersecurity analyst roles.
+
+Entry-level cyber roles often expect a mix of:
+- Networking fundamentals
+- Operating system knowledge
+- Security fundamentals
+- Troubleshooting experience
+- Log review
+- Basic scripting or automation awareness
+- Communication and documentation
+- Ticketing or case management
+- Security tools such as SIEM, EDR, vulnerability scanners, and firewalls
+
+Career strategy:
+Start with roles that build technical support and networking experience while completing Security+, CCNA-level networking knowledge, and hands-on SOC/vulnerability labs. Use GitHub projects to prove practical ability when paid cybersecurity experience is limited.
