@@ -382,7 +382,7 @@ security_plus_objectives.txt
 
 ### App Home
 
-![App Home](screenshots/01_app_home.png)
+![App Home](screenshots/01-app_home.png)
 
 ### Security+ Answer
 
