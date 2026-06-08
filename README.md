@@ -18,7 +18,7 @@ Instead of relying only on the language model’s general knowledge, the system 
 
 ## Problem Statement
 
-Cybersecurity career guidance is spread across many different sources: certification objectives, workforce frameworks, labor statistics, cyber career pathway tools, and practical portfolio advice. For someone trying to break into IT or cybersecurity, it can be difficult to understand what to prioritize.
+Cybersecurity career guidance is spread across many different sources: certification objectives, workforce frameworks, labor statistics, cyber career pathway tools, and practical portfolio advice. For someone trying to break into IT or cybersecurity, it can be difficult to understand what skills, certifications, and projects to prioritize.
 
 This project makes that information searchable by combining document ingestion, chunking, embeddings, semantic search, and grounded LLM response generation.
 
@@ -55,6 +55,8 @@ This project uses 10 source documents stored in the `docs/` folder:
 10. `resume_keywords_and_skill_map.txt`
 
 The documents cover certification topics, cybersecurity workforce roles, labor market guidance, beginner portfolio projects, and resume keywords.
+
+A `SOURCE_LIST.md` file is included with the project to document where the collected source documents came from.
 
 ---
 
@@ -274,9 +276,9 @@ Expected relevant source:
 security_plus_objectives.txt
 ```
 
-Top retrieved chunks should mention cybersecurity concepts, threats, vulnerabilities, security architecture, operations, and program management.
+Top retrieved chunks mentioned identity concepts, cryptography basics, security architecture, monitoring, incident response, risk management, and the five major Security+ SY0-701 domains.
 
-Relevance judgment: Accurate if the top chunks come from the Security+ document and describe Security+ domains.
+Relevance judgment: Accurate. The retrieved chunks came from `security_plus_objectives.txt` and directly answered the question.
 
 ---
 
@@ -294,9 +296,9 @@ Expected relevant source:
 ccna_exam_topics.txt
 ```
 
-Top retrieved chunks should mention networking fundamentals, IP connectivity, network access, IP services, security fundamentals, and automation.
+Top retrieved chunks mentioned networking fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation/programming.
 
-Relevance judgment: Accurate if the retrieved chunks are from the CCNA document and explain networking topics.
+Relevance judgment: Accurate. The retrieved chunks came from `ccna_exam_topics.txt` and matched the expected CCNA exam topic areas.
 
 ---
 
@@ -314,9 +316,9 @@ Expected relevant source:
 portfolio_lab_guide.txt
 ```
 
-Top retrieved chunks should mention Nmap, Wireshark, SIEM/log analysis, vulnerability scanning, SOC alert triage, or incident response reports.
+Top retrieved chunks mentioned beginner portfolio projects, including Nmap network scanning and project documentation.
 
-Relevance judgment: Accurate if retrieved chunks directly support beginner portfolio project recommendations.
+Relevance judgment: Partially accurate. The answer correctly used `portfolio_lab_guide.txt`, but retrieval also returned some related cybersecurity career sources. This shows that semantic retrieval can pull broader career-related context when the query overlaps with multiple documents.
 
 ---
 
@@ -363,15 +365,52 @@ What skills are important for entry-level cybersecurity roles?
 Response:
 
 ```text
-According to resume_keywords_and_skill_map.txt and nice_framework_overview.txt, entry-level cybersecurity roles commonly require networking fundamentals, troubleshooting, documentation, security concepts, vulnerability awareness, incident response basics, and log analysis.
+The system returned a grounded answer listing skills such as networking fundamentals, operating system knowledge, security fundamentals, security monitoring, network and system security, risk management, threats and vulnerabilities, security controls, identity and access management, incident response, vulnerability management, and secure network architecture.
 ```
 
-Sources:
+Sources retrieved:
 
 ```text
-resume_keywords_and_skill_map.txt
-nice_framework_overview.txt
+bls_information_security_analysts.txt
+cyberseek_career_pathways.txt
+security_plus_objectives.txt
 ```
+
+---
+
+## Screenshots
+
+### App Home
+
+![App Home](screenshots/01_app_home.png)
+
+### Security+ Answer
+
+![Security+ Answer](screenshots/02_security_plus.png)
+
+### CCNA Answer
+
+![CCNA Answer](screenshots/03_ccna_answer.png)
+
+### Portfolio Projects Answer
+
+![Portfolio Projects Answer](screenshots/04_portfolio_projects_answer.png)
+
+### Role Comparison Answer
+
+![Role Comparison Answer](screenshots/05_role_comparison_answer.png)
+
+### Entry-Level Skills Answer
+
+![Entry-Level Skills Answer](screenshots/06_entry_level_skills_answer.png)
+
+### Out-of-Scope Refusal
+
+![Out-of-Scope Refusal](screenshots/07_out_of_scope_refusal.png)
+
+### Retrieval Debug Output
+
+![Retrieval Debug Output](screenshots/08_terminal_retrieval_debug.png)
 
 ---
 
@@ -388,7 +427,7 @@ What topics does Security+ cover?
 Answer:
 
 ```text
-According to security_plus_objectives.txt, Security+ covers general security concepts, threats and vulnerabilities, security architecture, security operations, and security program management.
+Security+ covers topics such as identity concepts, cryptography basics, security architecture, monitoring, incident response, risk management, governance, and compliance. More specifically, the SY0-701 exam is organized around five major domains: general security concepts, threats/vulnerabilities/mitigations, security architecture, security operations, and security program management/oversight.
 ```
 
 Sources:
@@ -404,19 +443,19 @@ security_plus_objectives.txt
 Question:
 
 ```text
-What portfolio projects should a beginner cybersecurity candidate build?
+What does CCNA focus on?
 ```
 
 Answer:
 
 ```text
-According to portfolio_lab_guide.txt, useful beginner cybersecurity portfolio projects include Nmap scanning, Wireshark packet analysis, vulnerability analysis, SOC alert triage, SIEM log analysis, and incident response writeups.
+The Cisco CCNA 200-301 exam focuses on foundational networking knowledge. Major exam areas include network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation/programming.
 ```
 
 Sources:
 
 ```text
-portfolio_lab_guide.txt
+ccna_exam_topics.txt
 ```
 
 ---
@@ -426,18 +465,21 @@ portfolio_lab_guide.txt
 Question:
 
 ```text
-What certification is personally best for me based on my exact background?
+What certification is personally best for me?
 ```
 
 Answer:
 
 ```text
-I do not have enough information in the collected documents to answer that.
+I do not have enough information in the collected documents to answer that. The provided context mentions certifications such as Security+ and CCNA 200-301, but it does not provide personal recommendations or information about a specific situation, skills, or goals.
 ```
 
-Reason:
+Sources retrieved:
 
-The documents contain general career guidance, but they do not contain enough personal background information to make an individualized recommendation.
+```text
+bls_information_security_analysts.txt
+ccna_exam_topics.txt
+```
 
 ---
 
@@ -460,7 +502,7 @@ Security+ covers security concepts, threats, vulnerabilities, architecture, oper
 System response:
 
 ```text
-According to security_plus_objectives.txt, Security+ covers general security concepts, threats and vulnerabilities, security architecture, security operations, and security program management.
+Security+ covers identity concepts, cryptography basics, security architecture, monitoring, incident response, risk management, governance, compliance, security operations, and the five major SY0-701 domains.
 ```
 
 Retrieved chunks:
@@ -498,7 +540,7 @@ CCNA focuses on networking fundamentals, IP connectivity, network access, IP ser
 System response:
 
 ```text
-According to ccna_exam_topics.txt, CCNA focuses on networking fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation.
+The Cisco CCNA 200-301 exam focuses on foundational networking knowledge, including network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation/programming.
 ```
 
 Retrieved chunks:
@@ -536,24 +578,26 @@ Useful beginner projects include Nmap scanning, Wireshark packet analysis, vulne
 System response:
 
 ```text
-According to portfolio_lab_guide.txt, beginner cybersecurity candidates can build projects involving Nmap scanning, Wireshark packet analysis, vulnerability analysis, SOC alert triage, SIEM log analysis, and incident response reporting.
+The system recommended beginner portfolio projects from portfolio_lab_guide.txt, including project writeups that explain the objective, tools, steps, findings, analysis, and lessons learned. It specifically mentioned an Nmap Network Scanning Lab showing host discovery, port scanning, and relevant skills.
 ```
 
 Retrieved chunks:
 
 ```text
 portfolio_lab_guide.txt
+bls_information_security_analysts.txt
+security_plus_objectives.txt
 ```
 
 Accuracy:
 
 ```text
-Accurate
+Partially accurate
 ```
 
 Explanation:
 
-The system retrieved the correct portfolio guide and summarized the project recommendations accurately.
+The system retrieved the correct portfolio source and gave a grounded answer, but it returned a narrower set of project examples than the full expected answer. This is a useful retrieval limitation because the query retrieved some broader cybersecurity career sources in addition to the portfolio guide.
 
 ---
 
@@ -568,13 +612,13 @@ What is the difference between information security analysts and computer suppor
 Expected answer:
 
 ```text
-Information security analysts focus on protecting systems and responding to cyber threats, while computer support specialists focus on helping users and troubleshooting technical problems.
+Information security analysts focus on protecting systems and responding to cyber threats, while computer support specialists help users and organizations solve technical problems.
 ```
 
 System response:
 
 ```text
-According to bls_information_security_analysts.txt and bls_computer_support_specialists.txt, information security analysts focus on protecting computer systems and networks, while computer support specialists help users and organizations solve technical problems.
+Information Security Analysts help protect an organization's computer networks and systems by planning and carrying out security measures, monitoring systems, investigating security issues, and recommending solutions. Computer Support Specialists provide technical help to users and organizations by troubleshooting computer problems, supporting hardware and software, maintaining networks, assisting users, and documenting issues through support processes.
 ```
 
 Retrieved chunks:
@@ -613,14 +657,15 @@ Important skills include networking fundamentals, troubleshooting, documentation
 System response:
 
 ```text
-According to resume_keywords_and_skill_map.txt and nice_framework_overview.txt, entry-level cybersecurity roles often require networking, troubleshooting, documentation, security fundamentals, vulnerability awareness, incident response basics, and log analysis.
+The system listed skills including networking fundamentals, operating system knowledge, security fundamentals, security monitoring, network and system security, risk management, threats and vulnerabilities, security controls, identity and access management, incident response, vulnerability management, and secure network architecture.
 ```
 
 Retrieved chunks:
 
 ```text
-resume_keywords_and_skill_map.txt
-nice_framework_overview.txt
+bls_information_security_analysts.txt
+cyberseek_career_pathways.txt
+security_plus_objectives.txt
 ```
 
 Accuracy:
@@ -640,7 +685,7 @@ The response matches the expected skill areas and cites relevant source document
 Failure question:
 
 ```text
-What is the best certification for me personally?
+What certification is personally best for me?
 ```
 
 Expected behavior:
@@ -652,7 +697,7 @@ The system should avoid giving a personalized recommendation unless the collecte
 System response:
 
 ```text
-I do not have enough information in the collected documents to answer that.
+I do not have enough information in the collected documents to answer that. The provided context mentions certifications such as Security+ and CCNA 200-301, but it does not provide personal recommendations or information about a specific situation, skills, or goals.
 ```
 
 Accuracy:
@@ -730,14 +775,16 @@ pip install -r requirements.txt
 
 Copy `.env.example` to `.env`.
 
-```bash
-cp .env.example .env
-```
-
-On Windows PowerShell:
+Windows PowerShell:
 
 ```powershell
 Copy-Item .env.example .env
+```
+
+Mac/Linux:
+
+```bash
+cp .env.example .env
 ```
 
 Then add your Groq API key:
@@ -786,13 +833,9 @@ Potential improvements include:
 
 ## Demo Video
 
-Demo video link:
+Demo video link will be added after recording.
 
-```text
-Add your video link here
-```
-
-The demo should show:
+The demo will show:
 
 * At least three different questions
 * Source citations visible in the response
